@@ -4,15 +4,13 @@
 #
 # This installs nvm using homebrew
 
-# Check for Homebrew
 if test $(which brew)
 then
   echo "  Installing NVM for you."
-
-  # Install NVM and node 14
-  brew install nvm
-  nvm install 14
-
+  if test ! $(which nvm)
+  then
+    brew install nvm
+  fi
 fi
 
 exit 0
