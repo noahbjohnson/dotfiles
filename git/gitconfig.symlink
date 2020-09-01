@@ -33,3 +33,6 @@
         default = simple
 [credential]
 	helper = osxkeychain
+[user]
+	name = Noah B Johnson
+	email = noah@noahbjohnson.net
