@@ -11,6 +11,11 @@ then
   then
     brew install nvm
   fi
+  mkdir -p ~/.nvm
+  . /usr/local/opt/nvm/nvm.sh
+  nvm install 12
+  nvm install 10
+  nvm install 14
 fi
 
 exit 0
