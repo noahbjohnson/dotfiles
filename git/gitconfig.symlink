@@ -36,5 +36,6 @@
 [user]
 	name = Noah B Johnson
 	email = noah@noahbjohnson.net
+	signingkey = AE4772B48270925B
 [commit]
-    gpgsign = true
+	gpgsign = true
