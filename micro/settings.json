@@ -4,5 +4,6 @@
     "permbackup": true,
     "savecursor": true,
     "saveundo": true,
-    "softwrap": true
+    "softwrap": true,
+    "rmtrailingws": true
 }
