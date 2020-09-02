@@ -1,0 +1,8 @@
+{
+    "autosu": true,
+    "keymenu": true,
+    "permbackup": true,
+    "savecursor": true,
+    "saveundo": true,
+    "softwrap": true
+}
