@@ -20,7 +20,7 @@
 [apply]
         whitespace = nowarn
 [mergetool]
-        keepBackup = false
+        keepBackup = true
 [difftool]
         prompt = false
 [help]
@@ -36,3 +36,5 @@
 [user]
 	name = Noah B Johnson
 	email = noah@noahbjohnson.net
+[commit]
+    gpgsign = true
