@@ -1,2 +1,6 @@
+#!/bin/sh
+#
+# Saves the brew bundle dump to the dotfiles directory
+
 echo "Dumping brew packages to dotfiles"
 brew bundle dump -f --file $ZSH/homebrew/Brewfile
