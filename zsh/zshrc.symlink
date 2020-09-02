@@ -69,3 +69,12 @@ eval "$(direnv hook zsh)"
 # Cloudtamer.io local dev
 export LOCAL_CT_DEV="true"
 export CT_SERVICE_USER_SUFFIX="-"$USER
+
+
+# Mysql-client
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/mysql-client/lib"
+export CPPFLAGS="-I/usr/local/opt/mysql-client/include"
+
+# liquibase
+export LIQUIBASE_HOME="/usr/local/opt/liquibase/libexec"
