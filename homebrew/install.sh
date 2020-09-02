@@ -21,4 +21,9 @@ then
 
 fi
 
+if [ -f $ZSH/homebrew/Brewfile ]; then
+    echo "Installing bundled homebrew packages"
+    brew bundle --file $ZSH/homebrew/Brewfile
+fi
+
 exit 0
