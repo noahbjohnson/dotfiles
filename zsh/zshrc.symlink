@@ -48,17 +48,24 @@ zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
+
+# NVM setup (might be redundant)
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Add jdk to path
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
-# Disable autocorrect
-DISABLE_CORRECTION="true"
-
-unsetopt correct
-
+# Setup thefuck for command correction
 if test ! $(which thefuck)
 then
   eval $(thefuck --alias)
 fi
+
+# Enable direnv hook
+eval "$(direnv hook zsh)"
+
+# Cloudtamer.io local dev
+export LOCAL_CT_DEV="true"
+export CT_SERVICE_USER_SUFFIX="-"$USER
