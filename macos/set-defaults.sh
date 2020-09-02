@@ -41,4 +41,5 @@ defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.Web
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 # Screenshot location
+mkdir -p ~/Pictures/Screenshots
 defaults write com.apple.screencapture location ~/Pictures/Screenshots
