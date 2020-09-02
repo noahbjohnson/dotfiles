@@ -1,0 +1,5 @@
+#!/bin/sh
+#
+# Open the specified markdown file(s) in the editor
+
+open -a /Applications/Mark\ Text.app "$@"
