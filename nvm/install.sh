@@ -14,8 +14,8 @@ then
   mkdir -p ~/.nvm
   . /usr/local/opt/nvm/nvm.sh
   nvm install 12
-  nvm install 10
   nvm install 14
+  nvm install 10
 fi
 
 exit 0
