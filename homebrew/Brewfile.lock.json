@@ -5,13 +5,13 @@
         "revision": "5ddb6cd9f6e7961f1ecd93a9d99abdabdc251bc9"
       },
       "homebrew/cask": {
-        "revision": "26704f1221198e536e3cd5ab8e5f4658c789084d"
+        "revision": "e6a241b0e04f0a09e9d4db111dc9f87d3d59494a"
       },
       "homebrew/cask-versions": {
         "revision": "e53810797b4688aa11b11647fcfcd10e34d46088"
       },
       "homebrew/core": {
-        "revision": "76561e0c649b67629f58ba6ad792e36d3d0efa32"
+        "revision": "ccc345b59c4f9e77147dcb33b6291b2c673379c5"
       }
     },
     "brew": {
@@ -530,6 +530,31 @@
       "youtube-dl": {
         "version": "2020.07.28",
         "bottle": false
+      },
+      "liquibase": {
+        "version": "4.0.0",
+        "bottle": false
+      },
+      "mysql-client": {
+        "version": "8.0.21",
+        "bottle": {
+          "cellar": "/usr/local/Cellar",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/mysql-client-8.0.21.catalina.bottle.tar.gz",
+              "sha256": "deb15cab290b8280b3a9f80c615f715b19004422092192c7f6966fcff0999cfd"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/mysql-client-8.0.21.mojave.bottle.tar.gz",
+              "sha256": "778a703aa0c5a7f9f45a0fdff64af0d5b6069b51777dea8a4b0a8e1c316c4082"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/mysql-client-8.0.21.high_sierra.bottle.tar.gz",
+              "sha256": "c8740118e56908245c9a26f3f67ae5dbfdfbdc1c7d0be024d1953dd6a53483a7"
+            }
+          }
+        }
       }
     },
     "cask": {
@@ -707,6 +732,56 @@
           "full_name": "zoomus"
         }
       }
+    },
+    "mas": {
+      "GarageBand": {
+        "id": "682658836",
+        "version": "10.3.5"
+      },
+      "iMovie": {
+        "id": "408981434",
+        "version": "10.1.15"
+      },
+      "Keynote": {
+        "id": "409183694",
+        "version": "10.1"
+      },
+      "LastPass": {
+        "id": "926036361",
+        "version": "4.4.0"
+      },
+      "Magnet": {
+        "id": "441258766",
+        "version": "2.4.6"
+      },
+      "Microsoft Excel": {
+        "id": "462058435",
+        "version": "16.40"
+      },
+      "Microsoft PowerPoint": {
+        "id": "462062816",
+        "version": "16.40"
+      },
+      "Microsoft Word": {
+        "id": "462054704",
+        "version": "16.40"
+      },
+      "Numbers": {
+        "id": "409203825",
+        "version": "10.1"
+      },
+      "OneDrive": {
+        "id": "823766827",
+        "version": "20.084.0426"
+      },
+      "Pages": {
+        "id": "409201541",
+        "version": "10.1"
+      },
+      "Xcode": {
+        "id": "497799835",
+        "version": "11.7"
+      }
     }
   },
   "system": {
@@ -714,7 +789,7 @@
       "catalina": {
         "HOMEBREW_VERSION": "2.4.16",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "76561e0c649b67629f58ba6ad792e36d3d0efa32",
+        "Homebrew/homebrew-core": "ccc345b59c4f9e77147dcb33b6291b2c673379c5",
         "CLT": "12.0.0.0.1.1597368733",
         "Xcode": "11.7",
         "macOS": "10.15.6"
