@@ -10,6 +10,3 @@ fi
 
 echo "› sudo softwareupdate -i -a"
 sudo softwareupdate -i -a
-
-# Create Code folder
-mkdir -p ~/Code

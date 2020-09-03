@@ -2,19 +2,12 @@
 #
 # NVM
 #
-# This installs nvm using homebrew
+# This installs node using nvm
 
-if test $(which brew)
+if test $(which nvm)
 then
-  echo "  Installing NVM for you."
-  if test ! $(which nvm)
-  then
-    brew install nvm
-  fi
   mkdir -p ~/.nvm
   . /usr/local/opt/nvm/nvm.sh
-  nvm install 12
-  nvm install 14
   nvm install 10
 fi
 
