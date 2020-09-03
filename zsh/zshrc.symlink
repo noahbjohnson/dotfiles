@@ -70,7 +70,6 @@ eval "$(direnv hook zsh)"
 export LOCAL_CT_DEV="true"
 export CT_SERVICE_USER_SUFFIX="-"$USER
 
-
 # Mysql-client
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/mysql-client/lib"
