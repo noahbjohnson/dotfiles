@@ -44,12 +44,8 @@ prompt_order = [
     "character",
 ]
 
-# Symbols
-# 
-
-
 [aws]
-symbol = ""
+symbol = " "
 
 [battery]
 full_symbol = ""
@@ -58,9 +54,6 @@ discharging_symbol = ""
 
 [conda]
 symbol = " "
-
-[dart]
-symbol = " "
 
 [docker]
 symbol = " "
@@ -75,7 +68,7 @@ symbol = " "
 symbol = " "
 
 [golang]
-symbol = "ﳑ"
+symbol = " "
 
 [haskell]
 symbol = " "
@@ -104,9 +97,6 @@ symbol = " "
 [package]
 symbol = " "
 
-[perl]
-symbol = " "
-
 [php]
 symbol = " "
 
@@ -118,6 +108,3 @@ symbol = " "
 
 [rust]
 symbol = " "
-
-[swift]
-symbol = "ﯣ "
