@@ -77,3 +77,6 @@ export CPPFLAGS="-I/usr/local/opt/mysql-client/include"
 
 # liquibase
 export LIQUIBASE_HOME="/usr/local/opt/liquibase/libexec"
+
+# Starship
+eval "$(starship init zsh)"
