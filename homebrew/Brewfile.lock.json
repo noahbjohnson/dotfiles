@@ -5,7 +5,7 @@
         "revision": "5ddb6cd9f6e7961f1ecd93a9d99abdabdc251bc9"
       },
       "homebrew/cask": {
-        "revision": "1523b95a8f3a74937828e1fa839b532c6bd8b55c"
+        "revision": "95003a9305c1f1c6fdb952dd859312fb51e950c5"
       },
       "homebrew/cask-versions": {
         "revision": "0d2a94be3ebaab47bfc5b366ee41b5ba301f7709"
@@ -552,6 +552,48 @@
             "high_sierra": {
               "url": "https://homebrew.bintray.com/bottles/mysql-client-8.0.21.high_sierra.bottle.tar.gz",
               "sha256": "c8740118e56908245c9a26f3f67ae5dbfdfbdc1c7d0be024d1953dd6a53483a7"
+            }
+          }
+        }
+      },
+      "screen": {
+        "version": "4.8.0",
+        "bottle": {
+          "cellar": "/usr/local/Cellar",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/screen-4.8.0.catalina.bottle.tar.gz",
+              "sha256": "f3787a0e1c889106ab14d89c4f1bed001716ce1eb79e44e56b20e71b7448e172"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/screen-4.8.0.mojave.bottle.tar.gz",
+              "sha256": "30dfe7b1bc6c74d64be57224852e50ebd5d4c6d4939872eaceac5f06d9935208"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/screen-4.8.0.high_sierra.bottle.tar.gz",
+              "sha256": "1e63b4fd4ae798111980a7d9ed47c3fcb867cbad2c4253164b55722efc65d53e"
+            }
+          }
+        }
+      },
+      "shellcheck": {
+        "version": "0.7.1",
+        "bottle": {
+          "cellar": ":any_skip_relocation",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/shellcheck-0.7.1.catalina.bottle.1.tar.gz",
+              "sha256": "0cd635d2172d5e6617be8cdfb2723b6aa6feb2aa22e36cb3172d8b6fa012f4a0"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/shellcheck-0.7.1.mojave.bottle.1.tar.gz",
+              "sha256": "37201a49c0d7a5be49c5d97d4f6f8f5fcfef7d700b4694f74648a1addcd6783d"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/shellcheck-0.7.1.high_sierra.bottle.1.tar.gz",
+              "sha256": "1b20aeaba4d5e2e3df5cbe27636d655b6f877ee05a41d25fe1e0b3f9d00afa81"
             }
           }
         }
