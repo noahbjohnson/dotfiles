@@ -32,6 +32,7 @@ brew "shellcheck"
 brew "starship"
 brew "subversion"
 brew "terraform"
+brew "testdisk"
 brew "thefuck"
 brew "tldr"
 brew "tree"
@@ -40,12 +41,15 @@ brew "youtube-dl"
 cask "adoptopenjdk8"
 cask "angry-ip-scanner"
 cask "anydesk"
+cask "blockblock"
+cask "calibre"
 cask "chromedriver"
 cask "devdocs"
 cask "discord"
 cask "disk-inventory-x"
 cask "docker"
 cask "filebot"
+cask "firefox"
 cask "font-3270"
 cask "font-3270-nerd-font"
 cask "font-agave-nerd-font"
@@ -125,12 +129,19 @@ cask "google-drive-file-stream"
 cask "insomnia"
 cask "iterm2"
 cask "jetbrains-toolbox"
+cask "kextviewr"
+cask "knockknock"
 cask "lens"
 cask "lulu"
 cask "macs-fan-control"
+cask "maltego"
 cask "mark-text"
 cask "meld"
+cask "netiquette"
+cask "notion"
+cask "oversight"
 cask "ransomwhere"
+cask "reikey"
 cask "signal"
 cask "slack"
 cask "telegram"
@@ -141,6 +152,7 @@ cask "transmission"
 cask "visual-studio-code"
 cask "vlc"
 cask "vuescan"
+cask "whatsyoursign"
 cask "zoomus"
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
@@ -148,9 +160,11 @@ mas "Keynote", id: 409183694
 mas "LastPass", id: 926036361
 mas "Magnet", id: 441258766
 mas "Microsoft Excel", id: 462058435
+mas "Microsoft OneNote", id: 784801555
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Word", id: 462054704
 mas "Numbers", id: 409203825
 mas "OneDrive", id: 823766827
 mas "Pages", id: 409201541
+mas "Quiver", id: 866773894
 mas "Xcode", id: 497799835
