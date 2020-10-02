@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# Removes pretty much all the docker data on your machine
+
+docker stop $(docker ps -a -q)
+docker system prune -af
+docker rmi $(docker images -a -q)
