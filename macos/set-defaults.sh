@@ -46,7 +46,7 @@ defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 # defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 
 # Disable press-and-hold for keys in favor of key repeat.
-defaults write -g ApplePressAndHoldEnabled -bool false
+# defaults write -g ApplePressAndHoldEnabled -bool false
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
@@ -73,7 +73,8 @@ defaults write NSGlobalDomain KeyRepeat -int 1
 ###############################################################################
 
 # Restart automatically if the computer freezes
-sudo systemsetup -setrestartfreeze on
+# This has not been working
+# sudo systemsetup -setrestartfreeze on
 
 # Sleep the display after 15 minutes
 sudo pmset -a displaysleep 15
@@ -116,7 +117,7 @@ defaults write com.apple.finder QuitMenuItem -bool true
 # Finder: disable window animations and Get Info animations
 defaults write com.apple.finder DisableAllAnimations -bool true
 
-# Set  default location for new Finder windows
+# Set default location for new Finder windows
 # For other paths, use `PfLo` and `file:///full/path/here/`
 defaults write com.apple.finder NewWindowTarget -string "PfDe"
 defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
@@ -128,6 +129,7 @@ defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
 # Finder: show hidden files by default
+# can also toggle with cmd-shift-.
 defaults write com.apple.finder AppleShowAllFiles -bool true
 
 # Finder: show all filename extensions
@@ -292,13 +294,12 @@ defaults write com.apple.Safari AutoFillPasswords -bool false
 defaults write com.apple.Safari AutoFillCreditCardData -bool false
 defaults write com.apple.Safari AutoFillMiscellaneousForms -bool false
 
-
 # Warn about fraudulent websites
 defaults write com.apple.Safari WarnAboutFraudulentWebsites -bool true
 
 # Disable plug-ins
-defaults write com.apple.Safari WebKitPluginsEnabled -bool false
-defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2PluginsEnabled -bool false
+# defaults write com.apple.Safari WebKitPluginsEnabled -bool false
+# defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2PluginsEnabled -bool false
 
 # Disable Java
 defaults write com.apple.Safari WebKitJavaEnabled -bool false
@@ -404,7 +405,6 @@ defaults write com.apple.ActivityMonitor SortDirection -int 0
 # Address Book, Dashboard, iCal, TextEdit, and Disk Utility                   #
 ###############################################################################
 
-
 # Enable the debug menu in Address Book
 # defaults write com.apple.addressbook ABShowDebugMenu -bool true
 
@@ -465,7 +465,6 @@ defaults write com.apple.commerce AutoUpdateRestartRequired -bool true
 # Prevent Photos from opening automatically when devices are plugged in
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
-
 ###############################################################################
 # Google Chrome & Google Chrome Canary                                        #
 ###############################################################################
@@ -479,8 +478,8 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 # defaults write com.google.Chrome.canary AppleEnableMouseSwipeNavigateWithScrolls -bool false
 
 # Use the system-native print preview dialog
-defaults write com.google.Chrome DisablePrintPreview -bool true
-defaults write com.google.Chrome.canary DisablePrintPreview -bool true
+# defaults write com.google.Chrome DisablePrintPreview -bool true
+# defaults write com.google.Chrome.canary DisablePrintPreview -bool true
 
 # Expand the print dialog by default
 defaults write com.google.Chrome PMPrintingExpandedStateForPrint2 -bool true
