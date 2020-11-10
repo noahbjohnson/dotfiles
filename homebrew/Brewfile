@@ -14,18 +14,20 @@ brew "cocoapods"
 brew "dbus"
 brew "dbus-glib"
 brew "direnv"
+brew "docker", link: false
 brew "exiftool"
-brew "freeimage"
 brew "gcc"
+brew "freeimage"
 brew "jpeg"
 brew "git-lfs"
 brew "gitlab-runner", restart_service: true
 brew "go@1.14"
+brew "libusb"
+brew "hackrf"
 brew "hugo"
 brew "webp"
 brew "imagemagick"
 brew "libcapn"
-brew "libusb"
 brew "libftdi"
 brew "libmodbus"
 brew "libxslt"
@@ -38,6 +40,7 @@ brew "mysql-client"
 brew "ncurses"
 brew "nvm"
 brew "openjdk"
+brew "platformio"
 brew "scons"
 brew "screen"
 brew "shellcheck"
@@ -143,15 +146,16 @@ cask "google-drive-file-stream"
 cask "insomnia"
 cask "iterm2"
 cask "jetbrains-toolbox"
+cask "kap"
 cask "kextviewr"
 cask "knockknock"
-cask "lens"
 cask "lulu"
 cask "macs-fan-control"
 cask "maltego"
 cask "mamp"
 cask "mark-text"
 cask "meld"
+cask "musicbrainz-picard"
 cask "netiquette"
 cask "notion"
 cask "onyx"
@@ -177,9 +181,7 @@ cask "vuescan"
 cask "whatsyoursign"
 cask "zoomus"
 cask "zotero"
-mas "GarageBand", id: 682658836
-mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
+mas "Brother iPrint&Scan", id: 1193539993
 mas "LastPass", id: 926036361
 mas "Magnet", id: 441258766
 mas "Microsoft Excel", id: 462058435
@@ -188,6 +190,7 @@ mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Word", id: 462054704
 mas "Numbers", id: 409203825
 mas "OneDrive", id: 823766827
-mas "Pages", id: 409201541
 mas "Quiver", id: 866773894
+mas "Skitch", id: 425955336
+mas "Winds", id: 1381446741
 mas "Xcode", id: 497799835
