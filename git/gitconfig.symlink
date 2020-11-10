@@ -9,6 +9,7 @@
         wtf     = !$ZSH/bin/git-wtf
         rank-contributors = !$ZSH/bin/git-rank-contributors
         count   = !git shortlog -sn
+	root = rev-parse --show-toplevel
 [color]
         diff = auto
         status = auto
@@ -35,7 +36,7 @@
 	helper = osxkeychain
 [user]
 	name = Noah B Johnson
-	email = noah@noahbjohnson.net
+	email = njohnson@cloudtamer.io
 	signingkey = AE4772B48270925B
 [commit]
 	gpgsign = true
