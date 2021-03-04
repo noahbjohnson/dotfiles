@@ -1,0 +1,9 @@
+zsh-users/zsh-completions
+zsh-users/zsh-autosuggestions
+
+sobolevn/wakatime-zsh-plugin
+
+# these should be at last!
+sindresorhus/pure
+zdharma/fast-syntax-highlighting
+zsh-users/zsh-history-substring-search
