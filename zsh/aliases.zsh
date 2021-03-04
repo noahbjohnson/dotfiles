@@ -38,3 +38,9 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+# go to the portal project folder
+alias portal='cd "$PROJECTS/cloudtamer/portal"'
+
+# CD to the root of the git repo
+alias cdroot='cd $(git root)'

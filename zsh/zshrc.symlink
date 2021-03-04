@@ -80,27 +80,6 @@ export LIQUIBASE_HOME="/usr/local/opt/liquibase/libexec"
 
 # Starship
 eval "$(starship init zsh)"
-#
-# function gopath() {
-  # cdir=$PWD
-  # while [ "$cdir" != "/" ]; do
-    # if [ -f "$cdir/.gopath" ]; then
-      # export GOPATH=$cdir
-      # break
-    # fi
-    # cdir=$(dirname "$cdir")
-    # if [ "$cdir" == "/" ]; then
-      # export GOPATH=$DEFGOP
-    # fi
-  # done
-# }
-#
-# cd() {
-  # builtin cd "$@"
-  # gopath
-# }
-#
-# export DEFGOP=$GOPATH
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/noahjohnson/Code/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/noahjohnson/Code/google-cloud-sdk/path.zsh.inc'; fi
@@ -108,5 +87,3 @@ if [ -f '/Users/noahjohnson/Code/google-cloud-sdk/path.zsh.inc' ]; then . '/User
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/noahjohnson/Code/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/noahjohnson/Code/google-cloud-sdk/completion.zsh.inc'; fi
 
-# CD to the root of the git repo
-alias cdroot='cd $(git root)'
