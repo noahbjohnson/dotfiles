@@ -3,11 +3,12 @@
 format = """\
 $time| \
 $battery\
-$memory_usage
-$username$hostname\
-$git_branch$git_state$git_status
+$memory_usage\
+($line_break$git_branch$git_state$git_status)\
 $username$hostname$directory$character
 """
+# Disable the newline at the start of the prompt
+# add_newline = false
 
 [time]
 disabled = false
@@ -17,6 +18,9 @@ format = "[$time]($style) "
 
 [hostname]
 format = "@[$hostname]($style) "
+
+[git_status]
+format = """([\\[$all_status$ahead_behind\\]]($style) \n)"""
 
 [aws]
 symbol = " "
