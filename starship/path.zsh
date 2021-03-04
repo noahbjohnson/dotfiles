@@ -1,1 +1,1 @@
-export STARSHIP_CONFIG=$ZSH/starship/
+export STARSHIP_CONFIG=$ZSH/starship/starship.toml

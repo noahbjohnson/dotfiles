@@ -1,56 +1,46 @@
 # https://starship.rs/config
 
-prompt_order = [
-    "username",
-    "hostname",
-    "kubernetes",
-    "directory",
-    "git_branch",
-    "git_commit",
-    "git_state",
-    "git_status",
-    "hg_branch",
-    "docker_context",
-    "package",
-    "dotnet",
-    "elixir",
-    "elm",
-    "erlang",
-    "golang",
-    "java",
-    "julia",
-    "nim",
-    "nodejs",
-    "ocaml",
-    "php",
-    "purescript",
-    "python",
-    "ruby",
-    "rust",
-    "terraform",
-    "zig",
-    "nix_shell",
-    "conda",
-    "memory_usage",
-    "aws",
-    "env_var",
-    "crystal",
-    "cmd_duration",
-    "custom",
-    "line_break",
-    "jobs",
-    "battery",
-    "time",
-    "character",
-]
+format = """\
+$time| \
+$battery\
+$memory_usage
+$username$hostname\
+$git_branch$git_state$git_status
+$username$hostname$directory$character
+"""
+
+[time]
+disabled = false
+time_format = "%m.%d.%a @ %R"
+style = "bold dimmed yellow"
+format = "[$time]($style) "
+
+[hostname]
+format = "@[$hostname]($style) "
 
 [aws]
 symbol = " "
 
 [battery]
-full_symbol = ""
-charging_symbol = ""
-discharging_symbol = ""
+charging_symbol = " "
+discharging_symbol = " "
+full_symbol = " "
+
+[[battery.display]] 
+threshold = 10
+style = "bold red"
+
+[[battery.display]] 
+threshold = 30
+style = "bold orange"
+
+[[battery.display]] 
+threshold = 51
+style = "bold yellow"
+
+[[battery.display]] 
+threshold = 100
+style = "bold dimmed green"
 
 [conda]
 symbol = " "
@@ -66,6 +56,8 @@ symbol = " "
 
 [git_branch]
 symbol = " "
+# always_show_remote = true
+format = "[$symbol$branch]($style) ($remote_name:)$remote_branch"
 
 [golang]
 symbol = " "
@@ -83,7 +75,22 @@ symbol = " "
 symbol = " "
 
 [memory_usage]
-symbol = " "
+disabled = false
+threshold = 50
+style = "bold dimmed yellow"
+symbol = ""
+format = "[$symbol ${ram_pct}]($style) "
+
+[directory]
+truncation_length = 8
+truncation_symbol = "…/"
+style = "dimmed bold cyan"
+read_only_style = "dimmed bold red"
+format = "[$path]($style)[$read_only]($read_only_style) "
+
+[character]
+success_symbol = "[▶]()"
+error_symbol = "[▶](bold dimmed red)"
 
 [nim]
 symbol = " "
